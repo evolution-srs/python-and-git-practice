@@ -1,3 +1,5 @@
+hands_on_lab_2.py
+
 # 8-Types of objects in python
 #Word: String- Numbers: Integer, Float- Boolean: True/False
 # In Python, there are several built-in data types:   
@@ -5,6 +7,7 @@
 # - Integer: A whole number, e.g., 42   
 # - Float: A number with a decimal point, e.g., 3.14
 # - Boolean: Represents True or False values.
+
 # 9-Print the type of an object
 type_of_string = "Hello, Python!"
 type_of_integer = 42        
