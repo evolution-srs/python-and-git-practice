@@ -1,5 +1,5 @@
 # hands-on-lab-4.py
-# This labdemonstrates various Python concepts including variables, data types, and string manipulation.
+# This lab demonstrates various Python concepts including variables, data types, and string manipulation.
 # String
 # Use quotation marks for defining strings in Python.
 # Strings can be defined using single quotes (' ') or double quotes (" ").
