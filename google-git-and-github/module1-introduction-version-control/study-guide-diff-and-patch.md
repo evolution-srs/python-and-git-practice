@@ -1,5 +1,5 @@
 ### The diff command
-You use the diff command to find the differences between two files. On its own, it’s a bit hard to use; 
+* You use the diff command to find the differences between two files. On its own, it’s a bit hard to use; 
 instead, use diff -u to find lines that differ in two files:
 --
 ### Using diff -u
@@ -42,7 +42,7 @@ instead, use diff -u to find lines that differ in two files:
   ---
   ### The patch command
 
-  1- The patch command is useful for applying file differences. See the example below, which compares two files.
+  * The patch command is useful for applying file differences. See the example below, which compares two files.
   The comparison is saved as a .diff file, which is then patched to the original file!
   ```
   ~$ cat hello_world.txt 
@@ -51,6 +51,7 @@ instead, use diff -u to find lines that differ in two files:
   Hello World
   
   It's a wonderful day!
+
   ~$ diff -u hello_world.txt hello_world_long.txt 
   --- hello_world.txt     2019-12-16 19:24:12.556102821 +0900
   +++ hello_world_long.txt        2019-12-16 19:24:38.944207773 +0900
