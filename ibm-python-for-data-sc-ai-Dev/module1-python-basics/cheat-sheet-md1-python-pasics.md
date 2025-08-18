@@ -1,4 +1,4 @@
-| **Package/Method** | **Description** | **	Code Syntax Example** |
+| **Package/Method** | **Description** | **Code Syntax Example** |
 | --- | --- | --- |
 | Comments| Comments are lines of text that are ignored by the Python interpreter when executing the code<./td>| # This is a comment|
 | Concatenation| Combines (concatenates) strings.|**Syntax**: concatenated_string = string1 + string2  **EX**: result = "Hello" + " John"</td> | 
