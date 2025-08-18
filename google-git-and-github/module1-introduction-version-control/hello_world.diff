@@ -1,7 +1,0 @@
---- hello_world.txt	2025-08-17 20:38:34.001685200 +0300
-+++ hello_world_long.txt	2025-08-17 20:43:14.506432000 +0300
-@@ -1 +1,3 @@
-- Hello World
-+ Hello World 
-+ 
-+ It's a wonderful day!
