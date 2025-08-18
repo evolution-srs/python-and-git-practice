@@ -2,16 +2,7 @@
 | --- | --- | --- |
 | Comments| Comments are lines of text that are ignored by the Python interpreter when executing the code<./td>|```# This is a comment```|
 | Concatenation|:Combines (concatenates) strings.|``` **Syntax**: concatenated_string = string1 + string2  **EX**: result = "Hello" + " John"</td> ```| 
-|Data Types |- Integer - Float - Boolean - String | ``` **Ex**: x=7  
-* Integer Value 
-y=12.4 
-* Float Value 
-is_valid = True
-* Boolean Value 
-is_valid = False
-* Boolean Value 
-F_Name = "John"
-* String Value``` |     
+|Data Types |- Integer - Float - Boolean - String | ``` **Ex**: x=7 * Integer Value y=12.4, Float Value is_valid = True, Boolean Value is_valid = False, Boolean Value F_Name = "John", String Value``` |     
 | Indexing | Accesses character at a specific index. |```my_string="Hello" 
 char = my_string[0] ```|
 | len()|Returns the length of a string.| **Syntax**: len(string_name) 
