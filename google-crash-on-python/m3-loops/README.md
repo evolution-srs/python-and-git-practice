@@ -19,3 +19,9 @@
     
 2- **m3-study-guide-Skill1-for-loop.py** : Coding Skills
 3- **m3-study-guide-Skill2-while-loop.py** : Coding Skills , and `while` loop with`if-else` statement.
+---
+### Resources:
+For additional Python practice, the following links will take you to several popular online interpreters and codepads:
+* https://www.python.org/shell/
+* https://www.onlinegdb.com/online_python_interpreter
+* https://www.tutorialspoint.com/compilers/online-python-compiler.htm
