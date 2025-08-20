@@ -81,6 +81,15 @@ for i in range(1, 6):
         print(i)
 # output: 1, 2, 4, 5
 
+# e **Common syntax errors** :
+# Misspellings, Incorrect indentations, Missing or incorrect key characters:
+# Parenthetical types - ( curved ), [ square ], { curly }
+# Quote types - "straight-double" or 'straight-single', “curly-double” or ‘curly-single’
+# Block introduction characters, like colons - :
+# Data type mismatches.
+# Missing, incorrectly used, or misplaced Python reserved words.
+# Using the wrong case (uppercase/lowercase) - Python is a case-sensitive language.
+
 # 4.2 **Common Functions:
 
 # 1- Looping with Range
