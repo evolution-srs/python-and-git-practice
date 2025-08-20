@@ -55,37 +55,95 @@ def X_figure(salary):
 print("The CEO has a " + str(X_figure(2300000)) + "-figure salary.")
 # Output: The CEO has a 7-figure salary.    
 
-#“factorial” function. This function will accept an integer variable “n” through the function parameters
-#  and produce the factorials of this number (by multiplying this value by every number less than 
-# the original number [n*(n-1)], excluding 0).  
-def factorial(n):
-    result = n
-    start = n
-    n -= 1
-    while n > 0: # The while loop should execute as long as n is greater than 0
-        result *= n # Multiply the current result by the current value of n
-        n -= 1 # Decrement the appropriate variable by -1
-    return result
+# Skill 3 Skill 3: Using while loops with if-else statements
+# Use a function to accept two variable integers. 
+
+# Use nested if-else statements and while loops to count up or count down
+#  from the first variable to the second variable.  
+# This function will accept two integer variables: the floor
+# number that a passenger "enter"s an elevator and the floor
+# number the passenger is going to "exit". Then, the function
+# counts up or down from the two floor numbers.
+def elevator_floor(enter, exit):
+      # The "floor" variable will be used as a counter and to  
+    # print the floor numbers. The "elevator_direction"
+    # variable will hold the string "Going up: " or 
+    # "Going down: " plus the count up or down of the 
+    # "floor" numbers.
+    floor = enter
+    elevator_direction = ""
+    # If the passenger enters the elevator on a floor that  
+    # is higher than the destination floor:
+    if enter > exit:
+        # initialized with the string "Going down: ".
+        elevator_direction = "Going down: "
+        # While the "floor" number is greater than or  
+        # equal to the exit floor number:
+        while floor >= exit:
+            # The "floor" number is converted to a string 
+            # and is appended to the string variable 
+            # "elevator_direction".
+            elevator_direction += str(floor)
+            # If the "floor" number is still greater than  
+            # the exit floor number:
+            if floor > exit:
+
+                # A pipe | character is added between each  
+                # floor number in the string variable  
+                # "elevator_direction" to provide a visual  
+                # divider between numbers. The if-statement 
+                # above (if floor > exit) prevents the pipe 
+                # character from appearing after the "floor" 
+                # number is no longer greater than the "exit" 
+                # variable. 
+                elevator_direction += " | "
+                
+                # Decrement the "floor" number as the elevator 
+                # goes down.
+            floor -= 1
+
+    # Else, it is implied that the passenger is entering the  
+    # elevator on a floor that is lower than the destination 
+    # floor.
+    else:
+
+        # The "elevator_direction" string will be initialized 
+        # with the string "Going up: ".
+        elevator_direction = "Going up: "
+        
+        # While the "floor" number is less than or equal to the 
+        # "exit" floor number:
+        while floor <= exit:
+
+            # Convert the the "floor" number to a string and append 
+            # it to the string variable "elevator_direction".
+            elevator_direction += str(floor)
+
+            # If the entry floor number is still less than the exit 
+            # floor number:
+            if floor < exit:
+
+                # The pipe | character is added between each  
+                # floor number in the string variable  
+                # "elevator_direction" to provide a visual  
+                # divider between numbers. The if-statement 
+                # above (if floor < exit) prevents the pipe 
+                # character from appearing after the "floor" 
+                # number is no longer less than the "exit" 
+                # variable. 
+                elevator_direction += " | "
+
+            # Increments the "floor" number as the elevator goes up.
+            floor += 1
+
+    # Returns the string holding the elevator direction (Going down or 
+    # Going up) along with the floor countdown or count up.
+    return elevator_direction
 
 
-print(factorial(3)) # Should print 6
-print(factorial(9)) # Should print 362880
-print(factorial(1)) # Should print 1
-
-#the “rows_asterisks” function. This function should print rows of asterisks (*),
-#  where the number of rows is equal to the “rows” variable. 
-# The number of asterisks per row should correspond to the row number 
-# (row 1 should have 1 asterisk, row 2 should have 2 asterisks, etc.). 
-#Complete the code so that “row_asterisks(5)” will print:
-
-def rows_asterisks(rows):
-    # Complete the outer loop range to control the number of rows
-    for x in range(rows):
-        # Complete the inner loop range to control the number of * in each row
-        for y in range(x + 1):
-            # Print an asterisk without a newline
-            print("*", end="")
-
-#the “divisible” function. This function should count the number of values from 0 to the “max” parameter
-# minus 1 that are evenly divisible by the “divisor” parameter. This means they do not have a remainder when divided by the divisor. Complete the code so that a function call like “divisible(100,10)” #
-#will return the number “10”.            
+# Call the function with 2 integer parameters. 
+print(elevator_floor(1,4)) # Should print Going up: 1 | 2 | 3 | 4
+print(elevator_floor(6,2)) # Should print Going down: 6 | 5 | 4 | 3 | 2
+# The output of the code will be:
+# Going up: 1 | 2 | 3 | 4
+# Going down: 6 | 5 | 4 | 3 | 2
