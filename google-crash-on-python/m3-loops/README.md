@@ -13,7 +13,7 @@
 * While Loops
 * For Loop
 * Nested Loop
-* Knowledge: *
+* Knowledge:
 *    Terms: **Variable** - **Infinite Loop** - **Infinite Loop** --  **Itrators** -- **Loop Control Statements** - **Correct syntax is critical**
 *  Common Functions: **Looping with Range** - **print()** - **print(, end=' ')**
 
