@@ -1,4 +1,4 @@
- # This study guide provides a quick-reference summary.
+ # This study guide provides a quick-reference summary for tuples and its operations.
 
 # Knowledge:
 
