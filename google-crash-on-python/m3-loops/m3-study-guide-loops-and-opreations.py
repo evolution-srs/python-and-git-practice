@@ -1,3 +1,4 @@
+# This study guide provides a quick-reference summary for loops and its operations
 # Loops in Python
 # This file to review Loops in Python
 
