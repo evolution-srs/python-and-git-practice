@@ -68,3 +68,30 @@ list2 = ['a', 'b', 'c']
 zipped = zip(list1, list2)  # zipped is now [(1, 'a'), (2, 'b'), (3, 'c')]  
 # Note: The zip function returns an iterator in Python 3, so you may need to convert it to a list 
 # or another type to see the results.
+
+# List comprehensions:
+# A list comprehension is an efficient method for creating a new list from a sequence or a range in a single line of code.
+# It is a best practice to add descriptive comments about any list comprehensions used in your code, as their purpose can 
+# be difficult to interpret by other coders.
+
+# 1- [expression for variable in sequence] - Creates a new list based on the given sequence. 
+#  Each element in the new list is the result of the given expression.
+
+# Example:
+my_list = [ x*2 for x in range(1,11) ]  # my_list is now [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+# 2- [expression for variable in sequence if condition] - Creates a new list based on a specified sequence. Each element is the result of the given expression; elements are added only if the specified condition is true. 
+
+# Example:
+my_list = [ x for x in range(1,101) if x % 10 == 0 ]  # my_list is now [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# Note that tuples do not have comprehensions but a similar functionality can be achieved with: 
+
+tuple(i for i in (1, 2, 3))
+
+# When to use for loops or list comprehensions:
+# In Python, list comprehensions are generally used for creating new lists from existing ones in a concise and readable manner,
+# especially when the task involves simple transformations or filtering of elements. 
+
+# for loops are more versatile and are preferred when the operation is more complex, requires multiple lines of code,
+# involves statements other than expression (like print, pass, continue, break), or when you need to iterate over a list 
+# without creating a new one.
