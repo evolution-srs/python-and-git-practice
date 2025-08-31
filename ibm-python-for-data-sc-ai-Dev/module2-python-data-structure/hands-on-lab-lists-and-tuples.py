@@ -126,5 +126,36 @@ a, b, c = (1, 2, 3)
 print(a, b, c)  # Output: 1 2 3   
 
 
+C_tuple=(-5, 1, -3)
 
+# --- Difference between sorted() and .sort() ---
 
+# 1. sorted() is a built-in function that returns a new sorted list.
+#    It does not modify the original object.
+print("\nOriginal tuple:", C_tuple)
+new_sorted_list = sorted(C_tuple)
+print("Result from sorted():", new_sorted_list)
+
+# 2. .sort() is a list method that sorts the list in-place and returns None.
+#    The line `sort.list(C_tuple)` in your original code is incorrect and causes an error.
+#    Here is the correct way to use it on a list:
+c_list_from_tuple = list(C_tuple) # First, convert the tuple to a list
+print("List before .sort():", c_list_from_tuple)
+c_list_from_tuple.sort() # Now, sort the list in-place
+print("List after .sort():", c_list_from_tuple)
+
+# --- Accessing Simple vs. Nested Tuples ---
+
+print("\n--- Simple vs. Nested Tuple Access ---")
+# A simple tuple
+simple_tuple = (10, 20, 30)
+print("Simple tuple:", simple_tuple)
+print("Accessing with one index simple_tuple[1]:", simple_tuple[1])
+
+# A nested tuple (a tuple containing another tuple)
+nested_tuple = (10, (20, 30), 40)
+print("\nNested tuple:", nested_tuple)
+# Accessing with one index gets the entire inner tuple
+print("Accessing with one index nested_tuple[1]:", nested_tuple[1])
+# Accessing an element *inside* the inner tuple requires a second index
+print("Accessing with two indices nested_tuple[1][1]:", nested_tuple[1][1])

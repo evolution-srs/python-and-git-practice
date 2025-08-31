@@ -85,3 +85,28 @@ email_list = ["user1@example.com", "user2@example.com", "user1@example.com", "us
 unique_emails = set(email_list)
 print(f"\nFound {len(unique_emails)} unique email addresses.")
 print(unique_emails)
+
+
+# --- Understanding Set .add() vs. Dictionary Assignment ---
+
+# Question: V={'A','B'}, what is the result of V.add('C')?
+# IMPORTANT: V={'A','B'} creates a SET, not a dictionary, because it lacks key:value pairs.
+# The .add() method is for sets.
+V={'A','B'}
+V.add('C')
+# The arrangement is NOT guaranteed. Sets are UNORDERED.
+# The output could be {'A', 'C', 'B'} or {'C', 'A', 'B'}, etc.
+print(V)
+
+visitors = {'user123', 'user456'}
+visitors.add('user789')
+print(visitors)
+
+# For comparison: How to add to a DICTIONARY
+# Dictionaries use key:value pairs and maintain insertion order (since Python 3.7).
+print("\n--- Dictionary Example ---")
+user_ages = {'user123': 34, 'user456': 28}
+print("Original dictionary:", user_ages)
+# You add items using key assignment, not .add()
+user_ages['user789'] = 41
+print("Dictionary after adding an item:", user_ages)
