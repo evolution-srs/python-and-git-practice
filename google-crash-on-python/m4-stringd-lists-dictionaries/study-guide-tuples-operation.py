@@ -4,16 +4,19 @@
 
 # **Tuple-specific operations and methods**
 # Tuples are immutable, so they do not have methods that modify their contents. 
-# Protecting data: Because tuples are immutable, they can be used in situations where you want to ensure the data you have 
-# cannot be changed. This can be particularly helpful when dealing with sensitive or important information that should remain 
-# constant throughout the execution of a program.
+# Protecting data: Because tuples are immutable, they can be used in situations where you want to 
+# ensure the data you have cannot be changed. This can be particularly helpful when dealing 
+# with sensitive or important information that should remain constant throughout 
+# the execution of a program.
 
-# Hashable keys: Because they're immutable, tuples can be used as keys on dictionaries, which can be useful for complex keys.
+# Hashable keys: Because they're immutable, tuples can be used as keys on dictionaries, which can 
+# be useful for complex keys.
 # Example:
 my_tuple = (1, 2, 3)
 my_dict = {my_tuple: "value"}  # my_dict is now {(1, 2, 3): "value"}
 
-# Efficiency: Tuples are generally more memory-efficient than lists, making them advantageous when dealing with large datasets.
+# Efficiency: Tuples are generally more memory-efficient than lists, making them advantageous when
+#  dealing with large datasets.
 
 # However, you can still access elements and perform some operations:
 # The tuple() operator
