@@ -16,14 +16,12 @@ def sum_server_use_time(Server):
     total_use_time = 0.0
     # Iterate through the key and value pairs of the Server dictionary using
     # the .items() method.
-    for key,value in Server.items():
+    for value in Server.values():
         # For each end user, add the associated time value to the
         # total sum of all end user use time.
-        total_use_time += Server[key]
-
-        # Round the return value and limit to 2 decimal places.
-        return round(total_use_time, 2)
-    return total_use_time
+        total_use_time += value
+    # Round the return value and limit to 2 decimal places.
+    return round(total_use_time, 2)
 FileServer = {"EndUser1": 2.25, "EndUser2": 4.5, "EndUser3": 1, "EndUser4": 3.75, "EndUser5": 0.6, "EndUser6": 8}
 
 print(sum_server_use_time(FileServer)) # Should print 20.1
@@ -59,9 +57,9 @@ def list_full_names(employee_dictionary):
             # concatenated with a space " ", and the key "last_name". 
             full_names.append(first_name + " " + last_name)
 
-        # Return the new "full_names" list once the outer for loop has 
-        # completed all iterations.             
-        return(full_names)
-    print(list_full_names({"Ali": ["Muhammad", "Amir", "Malik"], "Devi": ["Ram", "Amaira"], "Chen": ["Feng", "Li"]}))
-    # Should print ['Muhammad Ali', 'Amir Ali', 'Malik Ali', 'Ram Devi',
+    # Return the new "full_names" list once the outer for loop has 
+    # completed all iterations.             
+    return(full_names)
 
+print(list_full_names({"Ali": ["Muhammad", "Amir", "Malik"], "Devi": ["Ram", "Amaira"], "Chen": ["Feng", "Li"]}))
+# Should print ['Muhammad Ali', 'Amir Ali', 'Malik Ali', 'Ram Devi', 'Amaira Devi', 'Feng Chen', 'Li Chen']
