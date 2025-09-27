@@ -197,3 +197,31 @@ def setup_gradebook(old_gradebook):
 fall_gradebook = {"James": 93, "Felicity": 98, "Barakaa": 80}
 print(setup_gradebook(fall_gradebook))
 # Should output {'James': 0, 'Felicity': 0, 'Barakaa': 0}
+
+car_make = "Lamborghini"
+print(car_make[3:-5])
+print(car_make[-4:])
+print(car_make[:7])
+car_makes = ["Ford", "Volkswagen", "Toyota"]
+car_makes.remove("Ford")
+print(car_makes)
+
+host_addresses = {"router": "192.168.1.1", "localhost": "127.0.0.1", "google": "8.8.8.8"}
+host_addresses.keys()
+# Should print: dict_keys(['router', 'localhost', 'google'])
+
+# Question 8
+#Fill in the blanks to complete the “confirm_length” function. This function should return how many
+#  characters a string contains as long as it has one or more characters, otherwise it will return 0.
+#  Complete the string operations needed in this function so that input like "Monday" will produce
+#  the output "6".
+def confirm_length(word):
+
+    # Complete the condition statement using a string operation.
+    if len(word) >= 1:
+        return len(word)
+    else:
+        return 0
+
+print(confirm_length("a")) # Should print 1
+print(confirm_length("This is a long string")) # Should
