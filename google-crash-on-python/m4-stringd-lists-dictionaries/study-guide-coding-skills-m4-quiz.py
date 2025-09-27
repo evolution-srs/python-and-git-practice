@@ -184,18 +184,3 @@ game1_scores = {"Arshi": 3, "Catalina": 7, "Diego": 6}
 print(reset_scores(game1_scores))
 # Should print {'Arshi': 0, 'Catalina': 0, 'Diego': 0}
 
-music_genres = ["rock", "pop", "country"]
-music_genres.append("blues")    
-print(music_genres)
-# Should print ['rock', 'pop', 'country', 'blues']
-speed_limits = {"street": 35, "highway": 65, "school": 15}
-print(speed_limits["highway"])
-# Should print 65
-
-country = "Luxembourg"
-print(country[3:6])
-print(country[-5])
-print(country[8:])
-
-
-#
