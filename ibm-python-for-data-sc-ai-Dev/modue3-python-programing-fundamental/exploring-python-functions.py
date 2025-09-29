@@ -36,3 +36,69 @@ result = multiply(3, 4)
 print(result)  # Output: 12
 
 # the same function can be used for diffrent type of data
+
+def Mult (a ,b):
+    """This function returns the product of two numbers or concatenates two strings."""
+    c = a * b
+    return c
+    Mult(2, "The BodyGuard ")
+print(Mult(2, "The BodyGuard "))
+
+# Variables types
+# Local variables: defined inside a function are local to that function and cannot be accessed outside
+#  of it.
+def local_example():
+    x = 10  # Local variable
+    print(f"Local variable x inside function: {x}")
+# Global variables: defined outside any function and can be accessed from anywhere in the code.
+# To modify a global variable inside a function, you need to use the 'global' keyword.
+# NOTE: It is generally recommended to avoid using global variables when possible, 
+# as they can lead to code that is harder to understand and maintain. 
+
+#Count the Frequency of Words Appearing in a String Using a Dictionary.
+def word_frequency(text):
+    # intialize an empty dictionary to store word frequencies
+    frequency = {}
+    # split the text into words
+    words = text.split()
+    # iterate through each word in the list
+    for word in words:
+        # if the word is already in the dictionary, increment its frequency by 1
+        if word in frequency:
+            frequency[word] += 1
+        # otherwise, add the word to the dictionary with a frequency of 1
+        else:
+            frequency[word] = 1
+    return frequency
+# Example usage
+text = "hello world hello"
+result = word_frequency(text)
+print(result)  # Output: {'hello': 2, 'world': 1}   
+
+# write a function that divides the first input by the second input:
+def divide(a, b):
+    # this function divides a by b and handles division by zero
+    #check if the second input is zero
+    if b == 0:
+        return "Error: Division by zero is not allowed."
+    else:
+        return a / b
+# Example usage
+result = divide(10, 2)  
+
+# Write a function code to find total count of word little in the given string: 
+# "Mary had a little lamb Little lamb, little lamb Mary had a little lamb.Its fleece was white 
+# as snow And everywhere that Mary went Mary went, Mary went Everywhere that Mary went The lamb 
+# was sure to go"**
+def count_little(text):
+    # convert the string into lowercase to make the search case-insensitive
+    text = text.lower()
+    # split the text into words
+    words = text.split()
+    # count the occurrences of the word "little"
+    count = words.count("little")
+    return count
+# Example usage
+text = "Mary had a little lamb Little lamb, little lamb Mary had a little lamb.Its fleece was white as snow And everywhere that Mary went Mary went, Mary went Everywhere that Mary went The lamb was sure to go"
+result = count_little(text)
+print(result)  # Output: 4
