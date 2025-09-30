@@ -90,3 +90,5 @@ with open("Example1.txt", "r")as file1:
 with open("Example1.txt", "r") as file1:
     FileasList = file1.readlines()
     print(FileasList[0])
+
+    
