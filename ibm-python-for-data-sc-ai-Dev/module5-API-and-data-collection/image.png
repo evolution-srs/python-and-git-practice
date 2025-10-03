@@ -2657,16 +2657,6 @@
 	<span slot="icon" class="ibm_icon_arrowright_local cds--card__cta c4d-ce--cta__icon"></span>
 </c4d-link-list-item>
 		
-			<c4d-link-list-item class="newsfeed__item" cta-type="local" href="https://newsroom.ibm.com/2025-08-26-ibm-and-amd-join-forces-to-build-the-future-of-computing" aria-label="IBM and AMD Join Forces to Build the Future of Computing">
-	<p>IBM and AMD Join Forces to Build the Future of Computing</p>
-	<a href="https://newsroom.ibm.com/2025-08-26-ibm-and-amd-join-forces-to-build-the-future-of-computing" slot="footer">
-		<c4d-card-footer href="https://newsroom.ibm.com/2025-08-26-ibm-and-amd-join-forces-to-build-the-future-of-computing" cta-type="local" target="_self">
-			<span slot="icon" class="ibm_icon_arrowright_local cds--card__cta c4d-ce--cta__icon"></span>
-		</c4d-card-footer>
-	</a>
-	<span slot="icon" class="ibm_icon_arrowright_local cds--card__cta c4d-ce--cta__icon"></span>
-</c4d-link-list-item>
-		
 	</c4d-link-list>
 </div>
 
