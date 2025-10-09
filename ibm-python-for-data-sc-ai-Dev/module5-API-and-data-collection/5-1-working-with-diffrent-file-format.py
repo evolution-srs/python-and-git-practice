@@ -4,7 +4,6 @@ import pandas as pd
 import requests
 import os # Used for basic file system operations
 
-# --- Configuration ---
 # The URL of the file to download
 file_url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/data/addresses.csv"
 
