@@ -27,3 +27,15 @@ json_object = json.dumps(person, indent = 4)
 with open("sample.json", "w") as outfile: 
     outfile.write(json_object) 
 print(json_object)
+
+# Reading Json to a file using json.load()
+import json 
+  
+# Opening JSON file 
+with open('sample.json', 'r') as openfile: 
+  
+    # Reading from json file 
+    json_object = json.load(openfile) 
+  
+print(json_object) 
+print(type(json_object)) 
