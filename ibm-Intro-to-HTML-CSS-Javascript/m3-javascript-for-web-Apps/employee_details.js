@@ -39,3 +39,49 @@ function findEmployeeById(employeeId) {
        }
    }
 
+//... Add one more key Specialization to the Array object
+const employees = [
+  { id: 1, name: 'John Doe', age: 30, department: 'IT', salary: 50000 },
+  { id: 2, name: 'Alice Smith', age: 28, department: 'HR', salary: 45000 },
+  { id: 3, name: 'Bob Johnson', age: 35, department: 'Finance', salary: 60000 },
+];
+
+// 1. Define the specializations array
+const specializations = ['JavaScript', 'Python', 'Java'];
+
+// 2. Use map() to create a new array with the added key
+const employeesWithSpecialization = employees.map((employee) => {
+  // Use the spread operator (...) to copy all existing properties
+  // Then, add the new 'Specialization' property
+  return {
+    ...employee,
+    Specialization: specializations
+  };
+});
+
+console.log(employeesWithSpecialization);
+
+
+//... create a function to display the details of employees who have specialization 
+// 1. Function to handle the button click
+function searchBySpecialization(targetSpecialization) {
+    // Use the filter() method to create a new array 
+    // containing only the employees that match the criteria.
+    const specializedEmployees = employees.filter(employee => {
+        // The criterion: check if the employee's Specialization array 
+        // includes the target specialization.
+        // The includes() method is essential here.
+        return employee.Specialization.includes(targetSpecialization);
+    });
+
+    // 2. Display the results
+    console.log(`Employees specialized in ${targetSpecialization}:`);
+    
+    if (specializedEmployees.length > 0) {
+        specializedEmployees.forEach(employee => {
+            console.log(`- ID: ${employee.id}, Name: ${employee.name}, Department: ${employee.department}`);
+        });
+    } else {
+        console.log("No employees found with that specialization.");
+    }
+}
