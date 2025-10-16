@@ -1,13 +1,14 @@
 /* sets the margin of all the element to 10px on all sides and the background-color to black */
 body{
     margin: 10px;
-    background-color: black;
+    background-color: rgb(176, 233, 175);
+    
 }
 
 /* Home section  which has the app name and nav bar. The styling is applied by id */
 
 #home {
-    background-color:  #483355;
+    background-color:  #ab51e4;
     padding-bottom: 1cm;
     margin-left:-1cm;
     margin-right:-1cm;
@@ -19,8 +20,12 @@ body{
 /* Application name inside the home section. The styling is applied by tag name */
 
   header {
+    background-color: #4CAF50
     font-size: 30px;
-    color: rgb(240, 234, 245);
+    font-weight: bolder;
+    text-decoration:underline;
+    text-align: center;
+    color: rgb(199, 186, 209);
     float: left;
     padding-left: 2cm;
   }
